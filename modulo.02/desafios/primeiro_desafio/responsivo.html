@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        main{
+            background-color: white;
+            padding: 20px;
+            min-width: 280px; /* tamanho da menor tela é de 320px*/
+            max-width: 800px;
+            margin: auto;/*para a imagem ficar centralizada na tela*/
+        }
+        img{
+            width: 100%; /*para o tamanho da imagem ir se adaptando ao tamanho da tela mesmo em 100% da imagem*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae porro itaque minima deleniti possimus omnis rerum beatae ratione dolores, ex unde, non blanditiis enim dolorem iure? Id ducimus velit soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae omnis officiis fugiat enim. Magnam quisquam similique sed, deserunt itaque accusantium aspernatur esse autem, optio fuga cupiditate architecto? Alias, sequi fugiat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae architecto vel sint maiores repellendus odit voluptas voluptatum nihil, ut libero sequi corporis ducimus error at debitis obcaecati reprehenderit, harum praesentium?</p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+            <!--enquanto o tamanho da tela for no máximo de 600px ele vai gerar essa outra foto selecionada que é menor, após 600px será gerada a imagem normal que é maior-->
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ipsa accusantium et aliquid voluptatibus facere inventore sapiente recusandae, ab perferendis a ex quod temporibus. Ea molestias ut autem porro ipsam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae ratione totam voluptate eos magnam exercitationem deleniti reprehenderit numquam eaque sapiente autem, sint optio amet? Praesentium enim a consequatur molestias deserunt? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur consequatur vel quae incidunt? Atque eos voluptatem, ipsam non architecto minus earum suscipit itaque dolorem eum quas, aperiam nisi qui modi.</p>
+    </main>
+</body>
+</html>

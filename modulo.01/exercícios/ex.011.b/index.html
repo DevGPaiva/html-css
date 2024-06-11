@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <!--<video src="midia/Meu-Video720.60.mp4" width="250" controls loop>-->
+        <!--caso queira que ovídeo se repita infinitas vezes basta acrescentar o loop no final
+    </video> mas para colocar vários formatos de vídeos diferentes, tem qfazer da forma abaixo-->
+    <video width="560" height="315" controls><!-- Se quise pode colocar capa, poster="imagens/capa.jpg", pode ajustar altura height="500", importante colocar os vídeos que vc quer que esteja na ordem de reprodução, pq o primeiro vídeo que tiver compatibilidade com o navegador do usuário esse será reproduzido-->
+        <source src="midia/Meu-Video560.mp4" type="video/mp4">
+        <source src="midia/meu-video.ogv" type="video/ogv">
+        <source src="midia/Meu-Video720.60.mkv" type="video/mkv">
+        <source src="midia/Meu-Video720.60.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+        </video>
+    <h1>Inserindo vídeos do YouTube</h1><!--Para pegar um vídeo do youtube, basta ir em compartilhar e depois incorporar copiar o código e depois colar aqui -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/pdrx6gSoDnY?si=6TPQjN-COYubCyKL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h1>Inserindo vídeos do Vimeo</h1><!--Para pegar um vídeo do vimeo, basta ir em compartilhar e depois mostrar detalhes se quiser pode fazer alguma alteração incorporar copiar o código e depois colar aqui -->
+    <iframe src="https://player.vimeo.com/video/232808623?h=7e64412123&byline=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
