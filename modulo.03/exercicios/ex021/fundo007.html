@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical, Horizontal ou Centralizado</title>
+    <style>
+        #container{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: relative;/*todo o posicionamento de uma caixa já é relativa*/
+            height: 96vh;
+            padding: 10px;
+            background-color: purple;
+        }
+        #conteudo{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            position: absolute;/*para poder ter a liberdade de fazer as configurações de centralização*/
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            left: 50%;/*distancia do left para o centro, para centralizar é melhor fazer em % do q em px*/
+            top: 50%;/*distancia do top para o centro*/
+            /*só que não fica centralizado, inicia o alinhamento em 50% do left e 50% do top, ou seja meu canto superior esquerdo que está centralizado*/
+            transform: translate(-50%, -50%);/*terei q fazer uma transformação, onde consigo mexer para todas as direções*/
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
