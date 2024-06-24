@@ -1,4 +1,64 @@
 @charset "UTF-8";
-body{
-    background-color: aqua;
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+:root {
+    --font1: Verdana, Tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Sriracha', cursive;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+h1{
+    padding: 50px;
+    /*text-transform: uppercase; (para transformar todas as letrasem maíusculas)*/
+    font-variant: small-caps;/*Transforma todas as letras em maiúsculas também, porém ficam mais suaves */
+    font-family: var(--font2);
+    font-size: 4em;
+}
+header > p{
+    padding-bottom: 50px;
+} 
+a{
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+section{
+    padding-top: 10vh;/*vh altura da tela e vw largura da tela*/
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+section.imagem > p{
+    background-color: transparent;
+    width: 400px;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
