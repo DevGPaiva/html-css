@@ -6,6 +6,7 @@
 html, body{
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--font1)
 }
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
@@ -18,14 +19,14 @@ header{
     background-color: black;
     color: white;
     text-align: center;
-    margin: auto;
+    
 }
 h1{
-    padding: 50px;
+    padding-top: 50px;
     /*text-transform: uppercase; (para transformar todas as letrasem maíusculas)*/
     font-variant: small-caps;/*Transforma todas as letras em maiúsculas também, porém ficam mais suaves */
     font-family: var(--font2);
-    font-size: 3em;
+    font-size: 10vw;/*10vw = 10% da largura da viwlport, o tamanho da letra vai se adaptando ao tamanho da tela */
 }
 header > p{
     padding-bottom: 50px;
@@ -44,6 +45,7 @@ section{
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--font3);
+    font-size: 3.5vw;
 }
 section.normal{
     background-color: white;
@@ -55,11 +57,13 @@ section.imagem{
 }
 section.imagem > p{
     background-color: rgba(0, 0, 0, 0.103);
-    width: 300px;
+    display: inline-block;/*caixa q se adapta ao conteudo*/
+    padding: 5px;
 }
 footer{
     background-color: black;
     color: white;
     padding: 10px;
     text-align: center;
+    
 }
