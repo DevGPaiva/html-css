@@ -25,7 +25,7 @@ h1{
     /*text-transform: uppercase; (para transformar todas as letrasem maíusculas)*/
     font-variant: small-caps;/*Transforma todas as letras em maiúsculas também, porém ficam mais suaves */
     font-family: var(--font2);
-    font-size: 4em;
+    font-size: 3em;
 }
 header > p{
     padding-bottom: 50px;
@@ -43,6 +43,7 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--font3);
 }
 section.normal{
     background-color: white;
@@ -53,8 +54,8 @@ section.imagem{
     color: white;
 }
 section.imagem > p{
-    background-color: transparent;
-    width: 400px;
+    background-color: rgba(0, 0, 0, 0.103);
+    width: 300px;
 }
 footer{
     background-color: black;
