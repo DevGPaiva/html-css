@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        tr.linha{
+            background-color: red;
+        }
+        td.dado{
+            background-color: rgb(0, 0, 0);
+            color: red;
+        }
+        h1{
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Campeonato Brasileiro</h1>
+    <!--Hierarquia de Tabelas (Simples)
+        table = tabela
+            table row(tr)= linha de tabela
+            table header= cabeçalho de tabela
+            table data(td)= dado de tabela-->
+    <table>
+        <tr>
+            <td>Posição</td>
+            <td>Time</td>
+            <td>Pontos</td>
+            <td>Jogos</td>
+            <td>Saldo de Gols</td>
+        </tr>
+        <tr class="linha">
+            <td>1</td>
+            <td>Flamengo</td>
+            <td class="dado">24</td>
+            <td>11</td>
+            <td class="dado">10</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Palmeiras</td>
+            <td>23</td>
+            <td>11</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Bahia</td>
+            <td>21</td>
+            <td>11</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Botafogo</td>
+            <td>20</td>
+            <td>11</td>
+            <td>7</td>
+        </tr>
+    </table>
+</body>
+</html>
