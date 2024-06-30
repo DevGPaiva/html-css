@@ -12,12 +12,16 @@
             width: 400px;
             height: 200px;
             border-collapse: collapse;
+            border: 1px solid black;
         }
-        td{
+        td, th{
             border: 1px solid black;
             padding: 8px;
             text-align: center;/*alinhamento horizontal*/
             /*vertical-align: top ou bottom ou middle;(para alinhamento vertical)*/
+        }
+        th{
+            background-color: lightgray;
         }
         tr.linha{
             background-color: white;
@@ -39,13 +43,13 @@
             table header= cabeçalho de tabela
             table data(td)= dado de tabela-->
     <table>
-        <tr>
-            <td>Posição</td>
-            <td>Time</td>
-            <td>Pontos</td>
-            <td>Jogos</td>
-            <td>Saldo de Gols</td>
-        </tr>
+        <thead>
+            <th>Posição</th>
+            <th>Time</th>
+            <th>Pontos</th>
+            <th>Jogos</th>
+            <th>Saldo de Gols</th>
+        </thead>
         <tr class="linha">
             <td>1</td>
             <td>Flamengo</td>
