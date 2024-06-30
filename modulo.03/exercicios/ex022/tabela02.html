@@ -12,8 +12,8 @@
             font-family: Arial, Helvetica, sans-serif;
             text-align: justify;
             /*background-image: url(imagens/campo\ de\ futebol2.png);
-            color: white;*/
-            background-color: rgb(240, 240, 240);
+            color: white;
+            background-color: rgb(240, 240, 240) ;*/
         }
         caption{
             font-weight: bold;
@@ -32,9 +32,12 @@
         tr.cabeça{
             background-color: gray;
         }
-        td{
-            background-color: rgb(209, 207, 207);
-        }
+        /*td{
+            background-color: rgb(240, 240, 240) ;
+        }*/
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }/*a pseudo classe nth-child é pra fazer o estilo zebrado, e entre parenteses fica de quantas em quantas linhas vai ser pulado*/
         footer{
             padding: 30px;
         }
